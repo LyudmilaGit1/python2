@@ -13,7 +13,6 @@
 
 """
 
-
 class NotNumberError(Exception):
     def __init__(self, txt):
         self.txt = txt
@@ -27,7 +26,7 @@ while True:
         break
     try:
         if not data.isdigit():
-            raise NotNumberError(f"'{data}' Это не число")
+            raise NotNumberError(f"'{data}' введите число")
 
         lst.append(int(data))
     except NotNumberError as err:
