@@ -41,25 +41,10 @@ class Matrix:
                 self.my_list[i][i_2] = self.my_list[i][i_2] + other.my_list[i][i_2]
         return Matrix.__str__(self)
 
-    def __add2__(self, other):
-        for i in range(len(self.my_list)):
-            for i_1 in range(len(other.my_list[i])):
-                self.my_list[i][i_1] = self.my_list[i][i_1] + other.my_list[i][i_1]
-        return Matrix.__str__(self)
-    def __add1__(self, other):
-        for i in range(len(self.my_list)):
-            for i_1 in range(len(other.my_list[i])):
-                self.my_list[i][i_1] = self.my_list[i][i_1] + other.my_list[i][i_1]
-        return Matrix.__str__(self)
 
-
-
-m = Matrix([[-1, 0, 1], [-1, 0, 1], [0, 1, -1]])
-new_m = Matrix([[-2, 0, 2], [-2, 0, 2], [0, 2, -2]])
-r = Matrix([[-1, 0, 1, 2], [-1, 0, 1, 3]])
-new_r = Matrix([[-2, 0, 2, 1], [-2, 0, 2, 0]])
-n = Matrix([[-1, 0], [-1, 0], [0, 1]])
+n = Matrix([[-1, 0, 2], [-1, 0, 3], [0, 1, 3]])
+print(n)
 new_n = Matrix([[-2, 0], [-2, 0], [0, 2]])
-print(m.__add__(new_m))
-print(r.__add2__(new_r))
-print(n.__add1__(new_n))
+print(new_n)
+matrix_3 = Matrix(n + new_n)
+print(matrix_3)
