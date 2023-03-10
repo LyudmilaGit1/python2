@@ -94,7 +94,7 @@ def write_to_csv(filepath):
 
 
 
-write_to_csv('source/report.csv')
+write_to_csv('task_1/source/report.csv')
 
 #os_prod_reg = re.compile(r'Изготовитель системы:\s*\S*')
 #os_prod_list.append(os_prod_reg.findall(data)[0].split()[2])
