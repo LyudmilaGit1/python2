@@ -1,4 +1,4 @@
-
+"""Создать метакласс для паттерна Синглтон (см. конец вебинара)"""
 
 class Singleton(type):
 
@@ -12,10 +12,10 @@ class Oneclass(metaclass=Singleton):
     pass
 
 b = Oneclass()
-c = Oneclass(5)
+c = Oneclass()
 
 print(b is c)
-
+print(id(b), id(c))
 
 
 

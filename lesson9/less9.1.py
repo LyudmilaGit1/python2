@@ -1,5 +1,5 @@
 """Создать не менее двух дескрипторов для атрибутов классов, которые вы создали ранее в ДЗ
-Создать метакласс для паттерна Синглтон (см. конец вебинара)"""
+"""
 class NonNegative:
     def __get__(self, instance, owner):
         return instance.__dict__[self.attr]
@@ -37,7 +37,7 @@ class Position(Worker):
     def get_total_income(self):
         return self._income.get('wage') + self._income.get('bonus')
 
-w1 = Position('Жаринов', 'Михаил', 'мастер', 1200, -300)
+w1 = Position('Жаринов', 'Михаил', 'мастер', 1200, 300)
 w2 = Position('Кузнецов', 'Сергей', 'сварщик', 1000, 250)
 def printing(arg):
     print('Фамилия', arg.surname)
