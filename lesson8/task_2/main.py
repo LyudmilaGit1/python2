@@ -39,7 +39,7 @@ def write_to_json(item, quantity, price, buyer, date):
     with open('orders1.json', 'w', encoding='utf-8') as o_f:
         json.dump(data, o_f, indent=4, ensure_ascii=False)
 
-write_to_json("computer", "8", "8000", "Кузнецов Е.А.", "02.03.2023")
+write_to_json("computer", "8", "8000", "Кузнецов Е.", "02.03.2023")
 
 
 

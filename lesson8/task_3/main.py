@@ -24,6 +24,6 @@ import yaml
 dict = {"items": ["notebook", "printer", "scaner"],
         "quantity": "6",
         "price": {"notebook": "200€", "printer": '100€', "scaner": '300€'}}
-with open("file1.yaml", "w", encoding='utf-8') as yf:
+with open("file.yaml", "w", encoding='utf-8') as yf:
     yaml.dump(dict, yf, default_flow_style=False, allow_unicode=True)
 
