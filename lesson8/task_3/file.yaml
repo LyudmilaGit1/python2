@@ -1,0 +1,9 @@
+items:
+- notebook
+- printer
+- scaner
+price:
+  notebook: 200€
+  printer: 100€
+  scaner: 300€
+quantity: '6'
