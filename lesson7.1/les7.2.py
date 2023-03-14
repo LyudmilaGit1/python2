@@ -19,19 +19,18 @@ length (длина в метрах), width (ширина в метрах).
 class Road():
 
     __weight = 25
-    __thickness = 0.05
 
     def __init__(self, length, width):
         self.__length = length
         self.__width = width
 
 
-    def all_weight(self):
-        res = self.__length * self.__width * self.__thickness * self.__weight
+    def all_weight(self, thickness):
+        res = self.__length * self.__width * thickness * self.__weight
         return res
 
 
 r2 = Road(5000, 20)
-w2 = r2.all_weight()
+w2 = r2.all_weight(0.05)
 
 print(f'20м*5000м*25кг*0.05м = {w2} кг =  {w2 / 1000} т')
